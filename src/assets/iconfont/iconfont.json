@@ -1,0 +1,23 @@
+{
+  "id": "2402550",
+  "name": "学生健康监测系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20210842",
+      "name": "成功",
+      "font_class": "-bigData-chenggong",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "20210843",
+      "name": "取消",
+      "font_class": "-bigData-quxiao",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    }
+  ]
+}

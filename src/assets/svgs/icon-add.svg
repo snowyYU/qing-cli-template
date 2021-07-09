@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <g id="01监测预警" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02监测预警-预警规则设置-编辑" transform="translate(-497.000000, -286.000000)">
+            <g id="编组-14" transform="translate(497.528634, 286.500000)">
+                <rect id="矩形" fill="#73787F" x="2" y="2" width="16" height="16" rx="8"></rect>
+                <path d="M9.44622845,5 L10.5573338,5.00356104 L10.544,8.951 L15,8.95175565 L15,10.0624768 L10.541,10.062 L10.5252732,15 L9.41416782,14.996439 L9.43,10.062 L5,10.0624768 L5,8.95175565 L9.433,8.951 L9.44622845,5 Z" id="形状结合" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

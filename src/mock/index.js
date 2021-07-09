@@ -1,0 +1,5 @@
+// export * from '../modules/chinaunicom-emergency-early_warning/mock'
+// export * from '../modules/chinaunicom-emergency-dispose/mock'
+// export * from '../modules/chinaunicom-emergency-afterwards/mock'
+// export * from '../modules/chinaunicom-emergency-resources/mock'
+// export * from '../modules/chinaunicom-emergency-rescue/mock'
