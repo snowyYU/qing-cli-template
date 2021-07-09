@@ -23,14 +23,7 @@ router.beforeEach(async (to, from, next) => {
       const routes = await store.dispatch('user/getDoorResourcesTreeBySystem')
 
       // *******************设置应用启动后需要更新的 vuex start
-      await store.dispatch('user/getSchoolYearList')
-      await store.dispatch('user/getSchoolGradeList')
-      await store.dispatch('user/queryAllDictInfo')
-      await store.dispatch('user/getSchoolTeacherList')
-      await store.dispatch('user/queryCurSchoolYear')
-      await store.dispatch('user/getRoleType')
-      await store.dispatch('user/getOrgInfo')
-      await store.dispatch('user/queryAreaList')
+      
       // *******************设置应用启动后需要更新的 vuex end
 
       const accessRoutes = await store.dispatch(
