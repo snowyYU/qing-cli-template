@@ -1,5 +1,5 @@
 module.exports = {
-  title: '学生健康监测系统',
+  title: '模版系统',
 
   /**
    * @type {boolean} true | false

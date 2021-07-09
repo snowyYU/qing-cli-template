@@ -1,28 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import FirstLayout from '../layout/FirstLayout'
-// import SecondLayout from '../layout/SecondLayout'
-// import FullScreenLayout from '../layout/FullScreenLayout'
-
-import monitorReport from '../modules/monitor-report/router'
-import monitorWarning from '../modules/monitor-warning/router'
-import schoolManage from '../modules/school-manage/router'
-
 
 Vue.use(Router)
 
-let routers
-
-routers = {
+let routers = {
   constantRoutes: [
-    ...monitorReport.constantRoutes,
-    ...monitorWarning.constantRoutes,
-    ...schoolManage.constantRoutes,
+    
   ],
   asyncRoutes: [
-    ...monitorReport.asyncRoutes,
-    ...monitorWarning.asyncRoutes,
-    ...schoolManage.asyncRoutes,
+    
   ]
 }
 
