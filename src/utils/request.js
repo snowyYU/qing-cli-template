@@ -22,14 +22,6 @@ const authList = [
   '/emergency/resource/member/queryLoginInfo'
 ]
 
-// 白名单里的接口不会走判断 200 的逻辑，会直接将数据返回
-
-const whiteList = [
-  '/appendix/downloadResponseById',
-  '/schoolClass/fileUpload',
-  '/schoolStudent/fileUpload'
-]
-
 // request interceptor
 service.interceptors.request.use(
   config => {
@@ -79,13 +71,6 @@ service.interceptors.response.use(
       } else {
         Message.error(response.data.msg)
       }
-    }
-
-    const matchResult = whiteList.find(item => {
-      return response.config.url.includes(item)
-    })
-    if (matchResult) {
-      return res
     }
     if (res.code !== '200') {
       Message({
