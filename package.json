@@ -23,7 +23,7 @@
     "lodash": "^4.17.21",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
-    "dumpling-ui": "1.0.0",
+    "dumpling-ui": "@latest",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
