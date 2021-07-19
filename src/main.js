@@ -21,11 +21,6 @@ import '@/icons' // icon
 import '@/permission' // permission control
 import './registerServiceWorker'
 
-import * as echarts from 'echarts'
-import walden from './utils/echarts-theme/walden'
-
-echarts.registerTheme('walden', walden)
-
 // set ElementUI lang to EN
 // Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
