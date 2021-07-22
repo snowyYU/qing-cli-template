@@ -72,12 +72,14 @@ const mutations = {
 const actions = {
   generateRoutes({ commit }, paths) {
     const pathsFromApi = paths.filter(item => item.url)
-    // 获取后端返回的第一个地址，用以匹配 / 的情况
-    let redirectUrl = pathsFromApi[0].url
-    constantRoutes.push({
-      path: '/',
-      redirect: redirectUrl
-    })
+    if (pathsFromApi.length > 0) {
+      // 获取后端返回的第一个地址，用以匹配 / 的情况
+      let redirectUrl = pathsFromApi[0].url
+      constantRoutes.push({
+        path: '/',
+        redirect: redirectUrl
+      })
+    }
     // 修改整个生成的路由的 redirect
     const finallyRoutes = filterAsyncRoutes(asyncRoutes, pathsFromApi)
     finallyRoutes.forEach(subModule => {
