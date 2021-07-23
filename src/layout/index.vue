@@ -9,7 +9,7 @@
         class="drawer-bg"
         @click="handleClickOutside"
       />
-      <sidebar class="sidebar-container" />
+      <sidebar class="sidebar-container" no-top-header-menu />
       <app-main />
     </div>
   </div>

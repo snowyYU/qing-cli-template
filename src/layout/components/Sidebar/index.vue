@@ -33,6 +33,12 @@ import variables from '@/styles/variables.scss'
 
 export default {
   components: { SidebarItem, Hamburger },
+  props: {
+    noTopHeaderMenu: {
+      type: Boolean,
+      default: false
+    }
+  },
   computed: {
     ...mapGetters(['permission_routes', 'sidebar']),
     activeMenu() {
@@ -46,17 +52,24 @@ export default {
     },
     routes() {
       const routes = this.$router.options.routes
-      // console.log('routes', routes)
       const currentRoute = this.$route
       if (currentRoute.path) {
         let filterRoutes = []
-        const parentPath = '/' + currentRoute.path.split('/')[1]
-        for (let i = 0; i < routes.length; i++) {
-          const route = routes[i]
-          if (route.path === parentPath) {
-            filterRoutes = route.children
-            break
-          }
+        if (this.noTopHeaderMenu) {
+          routes.forEach((route) => {
+            if (!route.hidden) {
+              filterRoutes.push(route)
+            }
+          })
+        } else {
+          const parentPath = '/' + currentRoute.path.split('/')[1]
+          routes.some((route) => {
+            if (route.path === parentPath) {
+              filterRoutes = route.children
+              return true
+            }
+            return false
+          })
         }
         return filterRoutes
       }
